@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Family Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body onload="start()" class="background">
+  <div class="container">
+    <center>
+        <h3 class="h btn btn-info">Family 
+          <br>
+          <span>&#x1F467;</span>
+          <span>&#x1F468;</span>
+          <span>&#x1F469;</span>
+          <span>&#x1F466;</span>
+        </h3>
+        <br><br>
+        <span>&#x1F467; - Jiya</span>
+        <span>&#x1F468; - Father</span>
+        <span>&#x1F469; - Mother</span>
+        <span>&#x1F466; - Brother</span>
+        <br><br>
+        <img src="Family pic.JPG" id="family_pic_img">
+        <br><br>
+        <label>Webcam View :</label>
+      <div id="camera"></div>
+      <br>
+      <button onclick="capture()" class="btn btn-info">Capture</button>
+      <br><br>
+      <label>Snapshot :</label>
+      <div id="result"></div>
+      <br>
+      <button onclick="identify()" class="btn btn-success">Identify</button>
+      <br>
+      <h4>Name : <span id="object"></span></h4>
+      <h4>Accuracy : <span id="acc"></span></h4>
+    </center>
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
